@@ -27,6 +27,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this,RegisterActivity::class.java))
         }
         btnlogin.setOnClickListener {
+            startActivity(Intent(this,MainActivity::class.java))
             login()
         }
         sf = this.getSharedPreferences("datauser", Context.MODE_PRIVATE)
